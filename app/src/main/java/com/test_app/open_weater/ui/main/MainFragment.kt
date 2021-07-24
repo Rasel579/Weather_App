@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.test_app.open_weater.R
+import com.test_app.open_weater.viewmodels.MainViewModel
 
 class MainFragment : Fragment() {
 

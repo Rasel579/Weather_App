@@ -13,4 +13,27 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!--TextView container theme -->
+    <style name="CustomTextInputLayoutTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!--Input container theme -->
+    <style name="CustomTextInputLayoutContainerTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/white</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="placeholderTextColor">@color/white</item>
+        <item name="counterTextColor">@color/white</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="CustomEditTextStyle">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginStart">10dp</item>
+    </style>
 </resources>

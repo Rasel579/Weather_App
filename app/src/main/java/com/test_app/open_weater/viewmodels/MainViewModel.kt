@@ -1,4 +1,4 @@
-package com.test_app.open_weater.ui.main
+package com.test_app.open_weater.viewmodels
 
 import androidx.lifecycle.ViewModel
 

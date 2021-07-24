@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Open_Weater</string>
+    <string name="search_by_city_hint_text_input_layout">Search By City</string>
+    <string name="get_weather_text_btn">GET WEATHER</string>
 </resources>
