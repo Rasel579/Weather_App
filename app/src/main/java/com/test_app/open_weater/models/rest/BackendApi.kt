@@ -1,0 +1,12 @@
+package com.test_app.open_weater.models.rest
+
+import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Query
+
+interface BackendApi {
+  @GET("/weather")
+  fun getDataFromWeather(@Query("q") city : String,
+                         @Query("api_key") apiKey : String,
+                         @Query("units") units: String) : Call<WeatherDTO>
+}

@@ -109,7 +109,7 @@
                 style="@style/CustomTextInputLayoutTheme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:helperText="Wind Speed:">
+                app:helperText="Visibility:">
                 <TextView
                     android:id="@+id/visibility"
                     style="@style/CustomEditTextStyle"
