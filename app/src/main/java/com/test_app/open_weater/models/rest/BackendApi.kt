@@ -5,8 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface BackendApi {
-  @GET("/weather")
+  @GET("weather")
   fun getDataFromWeather(@Query("q") city : String,
-                         @Query("api_key") apiKey : String,
-                         @Query("units") units: String) : Call<WeatherDTO>
+                         @Query("units") units: String,
+                         @Query("appid") apiKey : String
+                         ) : Call<WeatherDTO>
 }
