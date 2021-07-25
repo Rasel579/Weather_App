@@ -16,6 +16,7 @@ import com.test_app.open_weater.databinding.MainFragmentBinding
 import com.test_app.open_weater.models.rest.WeatherDTO
 import com.test_app.open_weater.viewmodels.AppState
 import com.test_app.open_weater.viewmodels.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.text.SimpleDateFormat
 import java.time.Instant
 import java.util.*
@@ -23,9 +24,11 @@ import java.util.*
 class MainFragment : Fragment() {
     private lateinit var binding: MainFragmentBinding
     private var data: WeatherDTO ?= null
-    private val viewModel by lazy {
-        ViewModelProvider(this).get(MainViewModel::class.java)
-    }
+    private val viewModel: MainViewModel by  viewModel()
+
+//    private val viewModel by lazy {
+//        ViewModelProvider(this).get(MainViewModel::class.java)
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
