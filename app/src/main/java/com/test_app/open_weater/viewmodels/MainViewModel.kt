@@ -16,9 +16,9 @@ import kotlinx.coroutines.launch
 import java.lang.RuntimeException
 
 class MainViewModel(
-    private val liveData: MutableLiveData<AppState> = MutableLiveData<AppState>(),
-    private val repository: Repository = RepositoryImpl()
+    private val repository: Repository
 ) : ViewModel(), CoroutineScope by MainScope() {
+    private val liveData: MutableLiveData<AppState> = MutableLiveData<AppState>()
     private val tagCallbackError = "Callback_Error"
     fun getLiveData() = liveData
     fun getDataFromApi(cityName : String){
